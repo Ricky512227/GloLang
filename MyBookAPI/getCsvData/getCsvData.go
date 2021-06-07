@@ -43,7 +43,7 @@ func TotalBookCollections(records [][]string) []BookStructure {
 
 }
 func ReadCsv() []BookStructure {
-	csvFilePath := "C:\\Users\\kamalsai\\Desktop\\GoLang\\Sample-Rest-api\\BooksDB\\totalBooks.csv"
+	csvFilePath := "C:\\Users\\kamalsai\\Desktop\\My practices\\MyBookAPI\\BooksDB\\totalBooks.csv"
 	fmt.Println("Given File Path ::", csvFilePath)
 	csvFile, err := os.Open(csvFilePath)
 	//fmt.Println(reflect.TypeOf(csvFile))
@@ -58,3 +58,4 @@ func ReadCsv() []BookStructure {
 	fmt.Println(len(records), reflect.TypeOf(records), reflect.ValueOf(records).Kind())
 	return TotalBookCollections(records)
 }
+
